@@ -1,0 +1,152 @@
+
+/* -----------------------------공통----------------------- */
+body {
+  display: block;
+}
+
+.bodyBox {
+  display: block;
+  margin: 2% 10%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.headArea {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 30px 50px 0px 50px;
+}
+
+.headArea ul {
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+.headArea li {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 20px;
+  display: inline-block;
+}
+
+/* ------------------------ footer -------------------------- */
+footer {
+  display: grid;
+  grid-template-columns:4fr 1fr;
+  margin: 0px 10%;
+  background-color: dimgrey;
+}
+
+.bottom {
+  color: DarkGray;
+  font-size: 0.9em;
+  padding-left: 18px;
+}
+
+.icon {
+  padding: 10%;
+  text-align: right;
+}
+
+/* ---------------------------- index page --------------------------- */
+.banner {
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+.content {
+  color: white;
+  position: relative;
+  top: 250px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#contOne {
+  text-decoration: overline;
+}
+span {
+  font-size: 18px;
+}
+#contTwo {
+  font-size: 35px;
+}
+
+/*------------------------ Menu page ------------------------ */
+.bannerTwo {
+  background-image: url("./img/bannerTwo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+}
+
+#contTwoOne {
+  color: white;
+  position: relative;
+  top: 90px;
+  font-size: 25px;
+  padding-left: 50px;
+}
+
+main {
+  margin: 20px 10%;
+}
+
+.menuBackground {
+  display: block;
+}
+
+.menuBackground img {
+  width: 400px;
+}
+
+.menu {
+  display: inline-block;
+  background-color: whitesmoke;
+}
+
+.menu h2 {
+  padding-left: 10px;
+}
+.description {
+  padding-left: 15px;
+}
+
+/* --------------------------------gallery page ----------------------- */
+.bannerThree {
+  background-image: url("./img/bannerThree.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+}
+
+.gallery {
+  text-align: center;
+  margin: 5px;
+}
+
+.row {
+  display: block;
+  margin: 20px 0 20px 0;
+  padding: 0 10% 0 10%;
+}
+
+.column {
+  display: inline-block;
+}
+
+.row img {
+  width: 350px;
+}
