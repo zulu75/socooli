@@ -262,16 +262,6 @@ hr {
     padding-left: 18px;
   }
 
-  #contOne {
-    text-decoration: overline;
-    font-size: 1.3em;
-  }
-  span {
-    font-size: 0.8em;
-  }
-  #contTwo {
-    font-size: 1.3em;
-  }
   #contTwoOne {
     color: white;
     position: relative;
