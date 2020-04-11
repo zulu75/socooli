@@ -67,26 +67,18 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 150px;
   width: 100%;
 }
 
-.content {
-  color: white;
-  position: relative;
-  top: 250px;
-  width: 400px;
-  margin: 0 auto;
+.firstPage {
+  display: grid;
+  margin: 2% 10%;
+  grid-template-columns: repeat(auto-fit);
 }
 
-#contOne {
-  text-decoration: overline;
-}
-span {
-  font-size: 1.1em;
-}
-#contTwo {
-  font-size: 2em;
+.firstPage img {
+  width: 100%;
 }
 
 /* --------------------------- brand page ------------------------- */
@@ -134,7 +126,6 @@ hr {
 
 .ci img {
   width: 100%;
-
 }
 
 .logoIntro {
