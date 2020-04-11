@@ -1,12 +1,15 @@
-
 /* -----------------------------공통----------------------- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: block;
 }
 
 .bodyBox {
   display: block;
-  margin: 2% 10%;
+  margin: 1% 10% 2% 10%;
 }
 
 a {
@@ -16,25 +19,28 @@ a {
 
 .headArea {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  margin: 30px 50px 0px 50px;
+  grid-template-columns: 1fr 10fr;
+  margin: 2% 0 2% 2%;
+}
+
+.headArea img {
+  width: 130px;
 }
 
 .headArea ul {
-  margin: 0;
-  padding: 30px;
-  text-align: center;
+  padding: 2%;
+  text-align: right;
 }
 
 .headArea li {
   color: black;
-  font-size: 20px;
+  font-size: 1.3em;
   font-weight: 700;
   letter-spacing: 2px;
   padding: 20px;
   display: inline-block;
-  background-color: white;
 }
+
 
 /* ------------------------ footer -------------------------- */
 footer {
@@ -77,10 +83,10 @@ footer {
   text-decoration: overline;
 }
 span {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 #contTwo {
-  font-size: 35px;
+  font-size: 2em;
 }
 
 /* --------------------------- brand page ------------------------- */
@@ -93,26 +99,48 @@ span {
   width: 100%;
 }
 
+#contTwoOne {
+  color: white;
+  position: relative;
+  top: 90px;
+  font-size: 1.6em;
+  padding-left: 50px;
+}
+
 .introduce {
   display: block;
   text-align: center;
-  margin-top: 50px;
+  margin: 10%;
 }
 
 .empty {
-  margin: 60px 45%;
+  margin: 0 10%;
 }
 
+hr {
+  border: 2px solid silver;
+  width: 100px;
+}
+
+.upCi {
+  display: block;
+  margin: 0 10%;
+}
 .ci {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 30px 10% 50px 10%;
-  padding-left: 50px;
+  display: block;
+  margin: 0 10%;
+  padding: 15%;
+}
+
+.ci img {
+  width: 100%;
+
 }
 
 .logoIntro {
   display: block;
-  padding: 10% 5%;
+  margin: 0 15% 10% 15%;
+  text-align: center;
 }
 
 /*------------------------ Menu page ------------------------ */
@@ -125,28 +153,17 @@ span {
   width: 100%;
 }
 
-#contTwoOne {
-  color: white;
-  position: relative;
-  top: 90px;
-  font-size: 25px;
-  padding-left: 50px;
-}
-
-main {
-  margin: 20px 10%;
-}
-
 .menuBackground {
-  display: block;
+  display: grid;
+  margin: 20px 10%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.menuBackground img {
-  width: 400px;
+.menu img {
+  width: 100%;
 }
 
 .menu {
-  display: inline-block;
   background-color: whitesmoke;
 }
 
@@ -168,22 +185,17 @@ main {
 }
 
 .gallery {
-  text-align: center;
-  margin: 5px;
-}
-
-.row {
-  display: block;
-  margin: 20px 0 20px 0;
-  padding: 0 10% 0 10%;
+  margin: 3% 10%;
 }
 
 .column {
-  display: inline-block;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
-.row img {
-  width: 350px;
+.column img {
+  width: 100%;
 }
 
 /* ----------------------------- map page -------------------------- */
@@ -196,21 +208,24 @@ main {
   width: 100%;
 }
 
+.hourTop {
+  margin: 0 10%;
+}
+
 .businessHour {
   display: grid;
-  margin: 0 10%;
-  grid-template-columns: 1fr 1.5fr;
-  background-color: whitesmoke;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .businessHour img {
-  width: 500px;
-  height: 300px;
+  margin: 5% 0;
+  width: 100%;
 }
 
 .hours {
-  display: block;
-  margin: 30px;
+  margin: 5% 0;
+  padding: 10%;
+  text-align: center;
 }
 
 .hours strong {
@@ -219,6 +234,91 @@ main {
 }
 
 .map {
-  display: block;
+  display: grid;
+  margin: 2% 10%;
   text-align: center;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit);
+}
+
+.map img {
+  width: 100%;
+}
+
+@media (max-width: 479px) {
+
+  .headArea {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2% 0 2% 2%;
+  }
+
+  .headArea img {
+    width: 100px;
+  }
+
+  .headArea li {
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+  }
+
+  .bottom {
+    color: DarkGray;
+    font-size: 0.7em;
+    padding-left: 18px;
+  }
+
+  #contOne {
+    text-decoration: overline;
+    font-size: 1.3em;
+  }
+  span {
+    font-size: 0.8em;
+  }
+  #contTwo {
+    font-size: 1.3em;
+  }
+  #contTwoOne {
+    color: white;
+    position: relative;
+    top: 80px;
+    font-size: 1.2em;
+    padding: 5%;
+  }
+
+  .menuBackground {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .menu img {
+    width: 100%;
+  }
+
+  .column {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .column img {
+    width: 100%;
+  }
+
+  .businessHour {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* .businessHour img {
+    display: none;
+  } */
+
+  .map {
+    display: block;
+    margin: 5%;
+  }
 }
