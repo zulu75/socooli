@@ -19,7 +19,7 @@ a {
 
 .headArea {
   display: grid;
-  grid-template-columns: 1fr 10fr;
+  grid-template-columns: 1fr 11fr;
   margin: 2% 0 2% 2%;
 }
 
@@ -241,10 +241,11 @@ hr {
   .headArea {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 2% 0 2% 2%;
+    margin: 12% 0 2% 2%;
   }
 
   .headArea img {
+    margin: 5%;
     width: 100px;
   }
 
